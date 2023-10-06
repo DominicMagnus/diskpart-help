@@ -3,10 +3,14 @@ sel dis X
 clean
 con mbr
 
+# create 4gb FAT32 boot sys C: partition (for windows 3.n - win Me )
+
 cre par pri size=4096
 for fs=fat32 quick
 ass letter=D
 act
+
+# create FAT32 disk D: partition for all free space
 
 cre par pri
 for fs=fat32 quick
