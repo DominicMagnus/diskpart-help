@@ -1,0 +1,16 @@
+lis dis
+sel dis X
+clean
+con mbr
+
+create partition primary size=4096
+cre par pri size=4096
+format fs=fat32 quick
+assign letter=D
+active
+
+create partition primary
+format fs=fat32 quick
+assign letter=E
+
+
